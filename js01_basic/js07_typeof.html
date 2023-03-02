@@ -33,7 +33,14 @@
         배열의 index는 0부터 시작한다. 
 
       5. 함수(function() {})
-
+        함수는 익명함수와 이름이 있는 함수
+        함수의 선언
+          a. function 함수명(매개값1,...) { 실행문 ... }
+          b. cont 변수명 = function (매개값1...) { 실행문 }
+        
+        함수의 호출
+          a. 함수명();
+          b. 변수명();
       */
 
       // 객체
@@ -42,14 +49,44 @@
         name: '홍길동',
         age: 999,
         addr: '조선 한양',
-        fn: function () {},
+        fn: function () {
+          console.log('나는 함수입니다.');
+        },
+        xxx: function (a, b) {
+          return a * b;
+        },
       };
       console.log(obj.name, obj['age']);
+      console.log(
+        `객체안에 있는 함수(매개변수와 return이 없는 함수)의 호출 결과는 ${obj.fn()}`
+      );
+      console.log(
+        `객체안에 있는 함수(매개변수, return이 있는 함수)의 호출 결과는 ${obj.xxx(
+          10,
+          10
+        )}`
+      );
 
       // 배열
       let arr = [];
       arr = [1, 2, 3, 4, '문자열', undefined, null];
       console.log(arr[0], arr[4]);
+
+      // 함수 function
+      function add(a, b) {
+        return a + b;
+      }
+
+      let a = 10;
+      let b = 10;
+      // let aaa = add(a, b);
+      console.log(`${a} + ${b} = ${add(a, b)}`);
+
+      // 익명함수
+      const bbb = function (a, b) {
+        return a - b;
+      };
+      console.log(`${a} + ${b} = ${bbb(a, b)}`);
     </script>
   </head>
   <body></body>
