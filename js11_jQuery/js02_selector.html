@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script>
+    $(function() {
+      $('h1').css('color', 'red'); // getElementTagName('h1').css()
+      $('p').css('color', 'green');
+      $('#target').css('color', 'orange');
+      $('h1#target').css('color', 'mediumseagreen');
+    });
+  </script>
+  
+  <!-- <style>
+    h1 {color: red;}
+    h1#taget {color: green;}
+  </style> -->
+  <title>Document</title>
+</head>
+<body>
+  <h1>오늘의 회화</h1>
+  <p> Thankfully, it's not that serious
+    영어다행스럽게도 그렇게 심각하진 않아.토트넘은 지난 9일(한국시간) 영국 런던 토트넘 홋스퍼 스타디움에서 개최된 ‘2022-2023시즌 유럽축구연맹(UEFA) 챔피언스리그(UCL) 16강 2차전’에서 AC밀란과 0-0으로 비겼다. 1차전서 0-1로 패한 토트넘은 1무1패로 탈락했다.
+    선발로 나선 손흥민은 왼쪽 윙어로 풀타임을 뛰었지만 유효슈팅 0개로 부진했다. 안토니오 콘테 토트넘 감독이 수술 후유증에서 복귀했지만 토트넘의 경기력은 나아지지 않았다. 후반 33분 핵심수비수 크리스챤 로메로의 퇴장까지 겹친 토트넘은 어려운 경기를 했다.
+    
+    콘테 감독은 선수 한 명이 적고 한 골이 아쉬운 상황에서도 공격수 교체를 너무 늦게 했다. 후반 25분 이메르송을 빼고 히샬리송을 넣었고, 후반 38분 쿨루셉스키 대신 다빈손 산체스를 투입했다. 손흥민과 해리 케인은 풀타임을 뛰었다.</p>
+  <p id="target">토트넘은 지난 9일(한국시간) 영국 런던 토트넘 홋스퍼 스타디움에서 개최된 ‘2022-2023시즌 유럽축구연맹(UEFA) 챔피언스리그(UCL) 16강 2차전’에서 AC밀란과 0-0으로 비겼다. 1차전서 0-1로 패한 토트넘은 1무1패로 탈락했다.
+
+    선발로 나선 손흥민은 왼쪽 윙어로 풀타임을 뛰었지만 유효슈팅 0개로 부진했다. 안토니오 콘테 토트넘 감독이 수술 후유증에서 복귀했지만 토트넘의 경기력은 나아지지 않았다. 후반 33분 핵심수비수 크리스챤 로메로의 퇴장까지 겹친 토트넘은 어려운 경기를 했다.
+    
+    콘테 감독은 선수 한 명이 적고 한 골이 아쉬운 상황에서도 공격수 교체를 너무 늦게 했다. 후반 25분 이메르송을 빼고 히샬리송을 넣었고, 후반 38분 쿨루셉스키 대신 다빈손 산체스를 투입했다. 손흥민과 해리 케인은 풀타임을 뛰었다.</p>
+  <h1 id="target">Thankfully, it's not that serious</h1>
+</body>
+</html>
